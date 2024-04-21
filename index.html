@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Money Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Money Manager</h1>
+        
+        <div class="form-section">
+            <h2>Transaction</h2>
+            <form id="transaction-form">
+                <input type="text" id="description" placeholder="Description" required>
+                <input type="number" id="amount" placeholder="Amount" required>
+                <select id="type">
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+                <button type="submit">Transaction</button>
+            </form>
+        </div>
+
+        <div class="summary-section">
+            <h2>Summary</h2>
+            <div id="total-income">Total Income: $0</div>
+            <div id="total-expense">Total Expense: $0</div>
+            <div id="balance">Balance: $0</div>
+        </div>
+
+        <div class="history-section">
+            <h2>Transaction History</h2>
+            <ul id="transaction-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
